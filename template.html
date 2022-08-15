@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>QSL-card Provider</title>
+  </head>
+  <body>
+    <div class="callsign">
+      <div>Callsign:</div>
+       <div>{{ ham.call }}</div>
+    </div>
+    <div class="qsoData">
+      <div>QSO Data:</div>
+      <div>{{ qso.dateTime }} | {{ qso.mode }} | {{ qso.report }}</div>
+     </div>
+     <div class="qsoData">
+      <div>:</div>
+      <div>{{ qso.dateTime }} | {{ qso.mode }} | {{ qso.report }}</div>
+     </div>
+    <div class="qrzcom">
+      <iframe id="frame" name="frame" src="{{ ham.link.qrzCom }}"></iframe>
+    </div>
+    <div class="qrzru">
+      <iframe id="frame" name="frame" src="{{ ham.link.qrzRu }}"></iframe>
+    </div>
+  </body>
+</html>
